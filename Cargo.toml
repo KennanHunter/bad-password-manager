@@ -2,7 +2,10 @@
 name = 'bad_pass_manager'
 version = '0.1.0'
 edition = '2018'
-authors = ["Kennan Hunter <kennanhunter5@gmail.com>"]
+authors = ['Kennan Hunter <kennanhunter5@gmail.com>']
+
+[dependencies]
+rocket_contrib = '0.4'
 
 [dependencies.diesel]
 version = '1.4.4'
