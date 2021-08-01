@@ -1,12 +1,12 @@
 [package]
-name = 'bad_pass_manager'
+name = 'bad_pass_manager_api'
 version = '0.1.0'
 edition = '2018'
 authors = ['Kennan Hunter <kennanhunter5@gmail.com>']
 
 [dependencies]
 rocket_contrib = '0.4'
-shitty_hash = {path = "./shittyHash"}
+shitty_hash = {git = "https://github.com/KennanHunter/ShittyHash"}
 
 [dependencies.diesel]
 version = '1.4.4'

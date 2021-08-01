@@ -1,0 +1,5 @@
+FROM rustlang/rust:nightly
+WORKDIR /api
+COPY . . 
+RUN cargo build --release
+CMD ["cargo", "run", "--release"]
