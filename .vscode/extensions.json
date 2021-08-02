@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "svelte.svelte-vscode",
+        "coenraads.bracket-pair-colorizer-2",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.vscode-typescript-next",
+        "esbenp.prettier-vscode",
+        "rust-lang.rust",
+        "mtxr.sqltools"
+    ]
+}
