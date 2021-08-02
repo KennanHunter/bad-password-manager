@@ -1,4 +1,4 @@
-use rocket::{post, routes, Route};
+use rocket::{routes, Route};
 
 mod new;
 

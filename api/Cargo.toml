@@ -6,7 +6,7 @@ authors = ['Kennan Hunter <kennanhunter5@gmail.com>']
 
 [dependencies]
 rocket_contrib = '0.4'
-shitty_hash = {git = "https://github.com/KennanHunter/ShittyHash"}
+pbkdf2 = '0.8.0'
 
 [dependencies.diesel]
 version = '1.4.4'
