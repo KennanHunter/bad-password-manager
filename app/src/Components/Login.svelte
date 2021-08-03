@@ -72,8 +72,21 @@ exampleForm.addEventListener("submit", handleFormSubmit);
         background-color:white;
         border: 2px solid black;
         padding: 30px;
-        width:30%;
+        width: fit-content;
+        max-width: 30em;
     }
+
+    /* @media (30em <= width) { 
+        form {
+            width: 30%
+        }
+    }
+    @media (width <= 30em ) { 
+        form {
+            width: 30%
+        }
+    } */
+
 
     input[type="text"], input[type="password"] {
         width: 100%;

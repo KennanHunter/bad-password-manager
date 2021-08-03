@@ -15,7 +15,7 @@
             <Vault />
         {/if}
     </div>
-    <footer>Made By Kennan Hunter {login}</footer>
+    <footer>Made By Kennan Hunter</footer>
 </main>
 
 <style>
