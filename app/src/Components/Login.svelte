@@ -64,7 +64,7 @@ exampleForm.addEventListener("submit", handleFormSubmit);
     <label for="fpass">Password</label>
     <input type="password" id="fpass" name="password" placeholder="Input Password"/>
 
-    <input type="submit" value="Submit" id = "form-submit"/>
+    <input type="submit" value="Login" id = "form-submit"/>
 </form>
 
 <style>

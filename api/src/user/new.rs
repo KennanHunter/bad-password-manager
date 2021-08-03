@@ -1,4 +1,4 @@
-use rocket::{post, request::Form, FromForm, Route};
+use rocket::{post, request::Form, FromForm};
 
 #[derive(FromForm)]
 pub struct MyForm {

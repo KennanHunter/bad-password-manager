@@ -3,11 +3,8 @@ services:
     api:
         build:
             context: ./api
-        ports: 
+        ports:
             - 8000:8000
-    # nginx:
-        # image: nginx:latest
-    
 
     db:
         image: postgres:9.4
@@ -20,5 +17,10 @@ services:
             - POSTGRES_USER=postgres
             - POSTGRES_DB=bad-password-manager-db
 
+    nginx:
+        build:
+            context: ./app
+        ports:
+            - 80:80
 volumes:
     db-data:
