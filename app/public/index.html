@@ -6,7 +6,7 @@
 
         <title>Bad Password Manager</title>
 
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <!-- <link rel="icon" type="image/png" href="/favicon.png" /> -->
         <link rel="stylesheet" href="/global.css" />
         <link rel="stylesheet" href="/build/bundle.css" />
 
@@ -16,14 +16,30 @@
     <body>
         <noscript>
             <style>
+                noscript {
+                    display: grid;
+                    place-items: center;
+                    height: 100%;
+                }
+                img {
+                    width: 30em;
+                }
                 #noscript {
-                    color:black;
-                    background:yellow;
-                    border:black;
+                    font-family: monospace;
+                    padding: 2em;
+                    width: 30em;
+                    color: black;
+                    background: yellow;
+                    border: black;
+                    text-align: center;
+                    font-size: larger;
                 }
             </style>
+            <img src="umaru.png" />
             <div id="noscript">
-                This application requires Javascript to run. If your device doesn't support javascript look into alternative clients, such as the CLI and desktop applications.
+                This application requires Javascript to run. If your device
+                doesn't support javascript look into alternative clients, such
+                as the CLI and desktop applications.
             </div>
         </noscript>
     </body>
