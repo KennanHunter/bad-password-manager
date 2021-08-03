@@ -6,7 +6,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "surge": "surge public bad-password-manager.surge.sh"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -22,9 +23,7 @@
     "@rollup/plugin-typescript": "^8.0.0",
     "typescript": "^4.0.0",
     "tslib": "^2.0.0",
-    "@tsconfig/svelte": "^2.0.0"
-  },
-  "dependencies": {
+    "@tsconfig/svelte": "^2.0.0",
     "sirv-cli": "^1.0.0"
   }
 }
