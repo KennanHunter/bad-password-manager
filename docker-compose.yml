@@ -3,12 +3,12 @@ services:
     api:
         build:
             context: ./api
-        # ports:
-        #     - 8000:8000
+        ports:
+            - 8000:8000
         depends_on:
             - db
-        networks:
-            - backend
+        # networks:
+        #     - backend
 
     db:
         image: postgres:9.4
@@ -20,8 +20,8 @@ services:
             - POSTGRES_PASSWORD=password
             - POSTGRES_USER=postgres
             - POSTGRES_DB=bad-password-manager-db
-        networks:
-            - backend
+        # networks:
+        #     - backend
 
     nginx:
         # image: nginx:latest
@@ -31,15 +31,15 @@ services:
             - ./app/public:/usr/share/nginx/html
         ports:
             - 80:80
-        networks: 
-            - frontend
-            - backend
+        # networks: 
+        #     - frontend
+        #     - backend
         depends_on:
             - api
 
 volumes:
     db-data:
 
-networks:
-    frontend:
-    backend:
+# networks:
+#     frontend:
+#     backend:
