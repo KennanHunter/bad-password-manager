@@ -1,1 +1,1 @@
-requires `git clone --recursive`
+its a bad password manager
