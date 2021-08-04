@@ -2,7 +2,7 @@
     "sqltools.connections": [
         {
             "previewLimit": 50,
-            "server": "localhost",
+            "server": "backend",
             "port": 5432,
             "driver": "PostgreSQL",
             "name": "bad-pass",
