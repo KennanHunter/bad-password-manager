@@ -3,27 +3,27 @@
 **NOT FINAL**
 
 
-### [ ] bpm login
+> - [ ] bpm login
 
 Logins using password and username
 
-### [ ] bpm list
+> - [ ] bpm list
 
 Lists Site and Usernames
 
-### [ ] bpm get
+> - [ ] bpm get
 
 Gets Username and Password for site
 
-### [ ] bpm logout
+> - [ ] bpm logout
 
 Logs out
 
-### [ ] bpm server
+> - [ ] bpm server
 
 changes which server to use
 
-### [ ] bpm rolley
+> - [ ] bpm rolley
 
 rolley
 
