@@ -1,6 +1,5 @@
 use rocket::{get, routes, Route};
 
-
 pub fn get_routes() -> Vec<Route> {
     routes![fetch_vault]
 }
@@ -9,4 +8,3 @@ pub fn get_routes() -> Vec<Route> {
 pub fn fetch_vault(id: String) -> String {
     format!("Hello, {}!", id)
 }
-

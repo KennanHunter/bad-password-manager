@@ -1,6 +1,6 @@
 use std::io::{self, Write};
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Credentials {
     pub username: String,
     pub password: String,

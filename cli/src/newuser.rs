@@ -4,5 +4,5 @@ use crate::hashes;
 
 pub fn newuser() {
     let stuff = read_creds();
-    println!("{:#?}", hashes::get_email_password_hash(&stuff));
+    println!("{:#?}", hashes::get_hashes(&stuff));
 }

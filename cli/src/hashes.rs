@@ -5,16 +5,21 @@ use pbkdf2::{
     Pbkdf2,
 };
 
-pub struct Hashes {
-    pub email_pass: PasswordHash,
-    pub master_pass: PasswordHash,
+#[derive(Debug)]
+pub struct Hashes<'a> {
+    pub email_pass: PasswordHash<'a>,
+    pub master_pass: PasswordHash<'a>,
 }
 
-pub fn get_hashes(creds: &Credentials) -> PasswordHash {
+pub fn get_hashes<'a>(creds: &'a Credentials) -> Hashes {
     let email_pass_hash = Pbkdf2
         .hash_password_simple(&creds.password.as_bytes(), &creds.username)
         .unwrap();
-    Pbkdf2
+    let master_pass_hash = Pbkdf2
         .hash_password_simple(email_pass_hash.hash.unwrap().as_bytes(), &creds.password)
-        .unwrap()
+        .unwrap();
+    Hashes {
+        email_pass: email_pass_hash,
+        master_pass: master_pass_hash,
+    }
 }
