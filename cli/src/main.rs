@@ -1,6 +1,10 @@
 use clap::{clap_app, crate_version};
 use open;
 
+mod credentials;
+mod newuser;
+mod flow;
+
 fn main() {
     let version = crate_version!();
 
@@ -13,6 +17,10 @@ fn main() {
             (version: version)
             (@arg server: -s --server "log into non standard server")
         )
+        (@subcommand newuser =>
+            (about: "create a new user")
+            (version: version)
+        )
         (@subcommand rolley =>
             (about: "rolley")
             (version: version)
@@ -22,6 +30,7 @@ fn main() {
 
     match matches.subcommand_name() {
         Some("login") => println!("login"),
+        Some("newuser") => newuser::newuser(),
         Some("rolley") => rolley(),
         Some("get") => println!("getting password"),
         None => println!("No subcommand was used"),
@@ -32,7 +41,7 @@ fn main() {
     println!("this doesn't work btw");
 }
 
-fn rolley() {
+pub fn rolley() {
     open::that(
         "https://media.discordapp.net/attachments/824500230119489566/872525002770120714/image0.png",
     )

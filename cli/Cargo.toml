@@ -1,5 +1,5 @@
 [package]
-name = "bpm"      # bad-password-manager-cli
+name = "bpm"          # bad-password-manager-cli
 version = "0.1.0-DEV"
 edition = "2018"
 
@@ -7,5 +7,8 @@ edition = "2018"
 
 [dependencies]
 clap = "2.33.3"
-ring = "0.16.20"
+# ring = "0.16.20"
 open = "2.0.0"
+rpassword = "5.0"
+pbkdf2 = "0.8.0"
+rand_core = { version ="0.6.3", features = ["std"] }

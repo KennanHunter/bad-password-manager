@@ -2,6 +2,9 @@
 
 **NOT FINAL**
 
+> - [ ] bpm newuser
+
+Create a new user from the command line
 
 > - [ ] bpm login
 
