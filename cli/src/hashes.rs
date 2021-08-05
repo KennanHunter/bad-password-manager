@@ -11,9 +11,9 @@ pub struct Hashes<'a> {
     pub master_pass: PasswordHash<'a>,
 }
 
-pub fn get_hashes<'a>(creds: &'a Credentials) -> Hashes {
+pub fn get_hashes(creds: &Credentials) -> Hashes {
     let email_pass_hash = Pbkdf2
-        .hash_password_simple(&creds.password.as_bytes(), &creds.username)
+        .hash_password_simple(creds.password.as_bytes(), &creds.username)
         .unwrap();
     let master_pass_hash = Pbkdf2
         .hash_password_simple(email_pass_hash.hash.unwrap().as_bytes(), &creds.password)
