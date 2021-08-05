@@ -2,8 +2,8 @@ use clap::{clap_app, crate_version};
 use open;
 
 mod credentials;
+mod hashes;
 mod newuser;
-mod flow;
 
 fn main() {
     let version = crate_version!();

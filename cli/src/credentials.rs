@@ -2,8 +2,8 @@ use std::io::{self, Write};
 
 #[derive(Debug)]
 pub struct Credentials {
-    pub Username: String,
-    pub Password: String,
+    pub username: String,
+    pub password: String,
 }
 
 pub fn read_creds() -> Credentials {
@@ -17,7 +17,7 @@ pub fn read_creds() -> Credentials {
     println!("Your password is {}", pass.trim());
 
     Credentials {
-        Username: username.trim().to_string(),
-        Password: pass.trim().to_string(),
+        username: username.trim().to_string(),
+        password: pass.trim().to_string(),
     }
 }
