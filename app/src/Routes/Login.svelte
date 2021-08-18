@@ -1,10 +1,30 @@
-<form action="/api/users/login" id="form">
+<script lang="ts">
+    import { StoreUsername, ReadUsername } from "../Functions/persistUsername";
+
+    interface User {
+        username: string;
+        password: string;
+        remember: boolean;
+    }
+    let user: User = {
+        username: ReadUsername() || "",
+        password: "",
+        remember: false,
+    };
+
+    function submitform() {
+        console.log(user);
+    }
+</script>
+
+<form name="login">
     <label for="fname">Username</label>
     <input
         type="text"
         id="fname"
         name="username"
         placeholder="Input Username"
+        bind:value={user.username}
     />
 
     <label for="fpass">Password</label>
@@ -13,9 +33,15 @@
         id="fpass"
         name="password"
         placeholder="Input Password"
+        bind:value={user.password}
     />
 
-    <input type="submit" value="Login" id="form-submit" />
+    <div id="divremember">
+        <label id="rememberlabel" for="fremember">Remember my username</label>
+        <input type="checkbox" id="fremember" name="remember" />
+    </div>
+
+    <input type="button" value="Login" id="form-submit" on:click={submitform} />
 </form>
 
 <style>
@@ -49,7 +75,7 @@
         box-sizing: border-box;
     }
 
-    input[type="submit"] {
+    input[type="button"] {
         width: 100%;
         background-color: #3a3a3a;
         color: white;
@@ -60,7 +86,8 @@
         cursor: pointer;
     }
 
-    input[type="submit"]:hover {
+    input[type="button"]:hover,
+    input[type="button"]:active {
         background-color: #1f1f1f;
     }
 </style>
