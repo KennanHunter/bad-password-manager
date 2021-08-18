@@ -11,6 +11,8 @@ pub struct Hashes<'a> {
     pub master_pass: PasswordHash<'a>,
 }
 
+/// Gets all the hashes from user credentials present in [`Hashes`]
+/// This is used in order to authenticate with the api
 pub fn get_hashes(creds: &Credentials) -> Hashes {
     let email_pass_hash = Pbkdf2
         .hash_password_simple(creds.password.as_bytes(), &creds.username)
