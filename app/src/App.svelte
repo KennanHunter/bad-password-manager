@@ -1,7 +1,7 @@
 <script lang="ts">
     import Navbar from "./Components/Navbar.svelte";
-    import Login from "./Components/Login.svelte";
-    import Vault from "./Components/Vault.svelte";
+    import routes from "./routes.js";
+    import Router from "svelte-spa-router";
 
     let login: boolean = true;
 </script>
@@ -9,11 +9,7 @@
 <main>
     <Navbar />
     <div>
-        {#if login === true}
-            <Login />
-        {:else}
-            <Vault />
-        {/if}
+        <Router {routes} />
     </div>
     <footer>Made By Kennan Hunter</footer>
 </main>
