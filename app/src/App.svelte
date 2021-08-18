@@ -3,13 +3,14 @@
     import routes from "./routes.js";
     import Router from "svelte-spa-router";
 
-    let login: boolean = true;
+    // let login: boolean = true;
 </script>
 
 <main>
     <Navbar />
     <div>
         <Router {routes} />
+        <!-- <h1>Epic</h1> -->
     </div>
     <footer>Made By Kennan Hunter</footer>
 </main>

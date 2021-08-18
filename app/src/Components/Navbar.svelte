@@ -1,6 +1,7 @@
 <ul>
     <li id="Title">Bad Password Manager</li>
-    <li class="hoverable"><a href="/">Vault</a></li>
+    <li class="hoverable"><a href="/#/vault/">Vault</a></li>
+    <li class="hoverable"><a href="/#/">Login</a></li>
     <!-- <li><a href="/About">About</a></li> -->
     <li id="github" class="hoverable">
         <a href="https://github.com/KennanHunter/bad-password-manager">GitHub</a
