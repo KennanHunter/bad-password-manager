@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.3"
 services:
     api:
         build:
@@ -31,6 +31,7 @@ services:
             - ./app/public:/usr/share/nginx/html
         ports:
             - 80:80
+            - 443:443
         # networks: 
         #     - frontend
         #     - backend
