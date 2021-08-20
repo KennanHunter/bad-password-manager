@@ -4,7 +4,7 @@ function StoreUsername(username: string) {
         store = window.localStorage;
     } catch (err) {
         console.error(err);
-        return "";
+        return;
     }
     store.setItem("username", username);
 }

@@ -13,11 +13,14 @@
     #Title {
         justify-self: flex-start;
     }
+
     /* The navbar container */
     ul {
         overflow: hidden;
         background-color: #333;
         margin: 0;
+        z-index: 11;
+        font-family: "Fira Code", monospace;
     }
 
     /* Navbar links */

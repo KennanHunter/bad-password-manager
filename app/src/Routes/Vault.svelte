@@ -30,6 +30,20 @@
             website: "google.com",
             password: "password",
         },
+
+        {
+            name: "Something",
+            username: "Kennanhunter5@gmail.com",
+            website: "something.com",
+            password: "password",
+        },
+
+        {
+            name: "Steam",
+            username: "Kennanhunter5@gmail.com",
+            website: "steam.com",
+            password: "password",
+        },
     ];
 </script>
 
@@ -37,6 +51,7 @@
     <aside id="scroll">
         <ul>
             {#each data as dat}
+                <ScrollItem {dat} />
                 <ScrollItem {dat} />
             {/each}
         </ul>
@@ -51,13 +66,16 @@
         height: 100%;
         grid-template-columns: min-content auto;
         background-color: white;
+        margin: 0;
     }
     aside {
         border: 1px solid black;
+        height: 100%;
         overflow-y: auto;
     }
     ul {
-        overflow-y: auto;
+        overflow-y: scroll;
+        height: 100%;
 
         margin: 0;
         padding: 0;

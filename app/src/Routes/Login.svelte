@@ -53,17 +53,6 @@
         max-width: 30em;
     }
 
-    /* @media (30em <= width) { 
-        form {
-            width: 30%
-        }
-    }
-    @media (width <= 30em ) { 
-        form {
-            width: 30%
-        }
-    } */
-
     input[type="text"],
     input[type="password"] {
         width: 100%;
