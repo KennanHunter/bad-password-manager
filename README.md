@@ -27,3 +27,4 @@ This requires docker and docker-compose which are available at https://www.docke
 -   [ ] Desktop App (Electron/Tauri)
 -   [ ] Native App (maybe)
 -   [ ] Backend Whitepaper / Formal Definition
+-   [x] Github Actions
