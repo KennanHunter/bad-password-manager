@@ -25,6 +25,7 @@
         height: 100%;
         /* max-width: 240px; */
         grid-template-rows: auto 85% auto;
+        overflow: hidden;
     }
 
     footer {

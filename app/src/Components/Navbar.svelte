@@ -17,7 +17,7 @@
     ul {
         overflow: hidden;
         background-color: #333;
-        margin-top: 0;
+        margin: 0;
     }
 
     /* Navbar links */
