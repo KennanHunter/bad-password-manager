@@ -1,5 +1,5 @@
 <script>
-    import ScrollItem from "../Components/ScrollItem.svelte";
+    import Scroll from "../Components/Scroll.svelte";
     let username = "Kennan";
 
     let data = [
@@ -49,12 +49,7 @@
 
 <div>
     <aside id="scroll">
-        <ul>
-            {#each data as dat}
-                <ScrollItem {dat} />
-                <ScrollItem {dat} />
-            {/each}
-        </ul>
+        <Scroll {data} />
     </aside>
     <h1>{username}'s Vault</h1>
 </div>
@@ -72,12 +67,5 @@
         border: 1px solid black;
         height: 100%;
         overflow-y: auto;
-    }
-    ul {
-        overflow-y: scroll;
-        height: 100%;
-
-        margin: 0;
-        padding: 0;
     }
 </style>

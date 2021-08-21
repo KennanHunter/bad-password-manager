@@ -14,5 +14,6 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
+        font-family: "Fira Code", monospace;
     }
 </style>
