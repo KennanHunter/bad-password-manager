@@ -1,5 +1,9 @@
 # Bad Password Manager
 
+[![Lines Of Code](https://tokei.rs/b1/github/KennanHunter/bad-password-manager?category=code)](https://github.com/KennanHunter/bad-password-manager)
+<a href="https://github.com/KennanHunter/bad-password-manager/actions">
+<img alt="Github Actions Build Status" src="https://img.shields.io/github/workflow/status/KennanHunter/bad-password-manager/bad-password-manager?label=Prod&style=flat-square"></a>
+
 My bad password manager
 
 ## Usage
