@@ -1,3 +1,4 @@
 # if you dont like my indent size fuck you this is my project
 [*]
+indent_style = tab
 indent_size = 4

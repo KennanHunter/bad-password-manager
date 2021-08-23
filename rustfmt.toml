@@ -1,0 +1,7 @@
+max_width = 100
+hard_tabs = true
+tab_spaces = 4
+newline_style = "Auto"
+unstable_features = true
+use_field_init_shorthand = true
+wrap_comments = true
