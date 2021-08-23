@@ -3,6 +3,11 @@
 mod user;
 mod vault;
 
+mod schema;
+mod models;
+
+mod db;
+
 use rocket;
 
 fn main() {

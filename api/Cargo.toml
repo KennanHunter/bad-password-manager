@@ -5,8 +5,8 @@ edition = '2018'
 authors = ['Kennan Hunter <kennanhunter5@gmail.com>']
 
 [dependencies]
-rocket_contrib = '0.4'
 pbkdf2 = '0.8.0'
+dotenv = "0.15.0"
 
 [dependencies.diesel]
 version = '1.4.4'
