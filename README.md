@@ -29,6 +29,6 @@ This requires docker and docker-compose which are available at https://www.docke
 -   [ ] Svelte Frontend
 -   [ ] CLI
 -   [x] Desktop App (Tauri)
--   [ ] Native App (maybe)
+<!-- -   [ ] Native App (maybe) -->
 -   [ ] Backend Whitepaper / Formal Definition
 -   [x] Github Actions
