@@ -4,6 +4,6 @@ use crate::hashes;
 
 ///Generates a new user
 pub fn newuser() {
-    let stuff = read_creds();
-    println!("{:#?}", hashes::get_hashes(&stuff));
+	let stuff = read_creds();
+	println!("{:#?}", hashes::get_hashes(&stuff));
 }
