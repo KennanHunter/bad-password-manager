@@ -1,4 +1,4 @@
-use crate::credentials::Credentials;
+use crate::util::credentials::Credentials;
 
 use pbkdf2::{
 	password_hash::{PasswordHash, PasswordHasher},

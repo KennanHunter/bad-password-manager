@@ -1,8 +1,8 @@
 use clap::{clap_app, crate_version};
 
-mod credentials;
-mod hashes;
-mod newuser;
+
+mod commands;
+mod util;
 
 fn main() {
 	let version = crate_version!();
@@ -29,7 +29,7 @@ fn main() {
 
 	match matches.subcommand_name() {
 		Some("login") => println!("login"),
-		Some("newuser") => newuser::newuser(),
+		Some("newuser") => commands::newuser::newuser(),
 		Some("rolley") => rolley(),
 		Some("get") => println!("getting password"),
 		None => println!("No subcommand was used"),
