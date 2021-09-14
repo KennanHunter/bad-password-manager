@@ -3,7 +3,7 @@ import Login from "./Routes/Login.svelte";
 import Lost from "./Routes/Lost.svelte";
 
 export default {
-    "/": Login,
-    "/vault/": Vault,
-    "*": Lost,
+	"/": Login,
+	"/vault/": Vault,
+	"*": Lost,
 };
